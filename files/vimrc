@@ -1,0 +1,68 @@
+set encoding=UTF-8
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" Plugins
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'bling/vim-airline'
+"Plugin 'airblade/vim-gitgutter'
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'ryanoasis/vim-devicons'
+"Plugin 'ctrlpvim/ctrlp.vim'
+
+" NERDTree Config
+map <C-b> :NERDTreeToggle<CR>
+
+" CtrlP Config
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" #############################################################################
+
+syntax on                    " Enable syntax highlight
+set number                   " Show line numbers
+set expandtab                " Tabs always insert spaces
+set autoindent               " Automatic indentation
+set shiftwidth=2             " Sets indentation as 2 spaces
+set tabstop=2                " Makes a tab count for every 2 spaces
+set backspace=2              " Use standard backspace behavior
+set scrolloff=5              " Always shows at least 5 lines above and below the cursor
+set sw=2                     " Sets shift width
+set sts=2                    " Makes spaces 'feel like' tabs
+set hlsearch                 " Highlights search results
+set encoding=utf-8           " Force UTF-8 encoding
+set fileformat=unix          " Force file format to UNIX
+set hidden                   " Allow vim to switch do another buffer w/o saving
+
+" Moving among buffers
+map <C-j> :bprev<CR>
+map <C-k> :bnext<CR>
+
+" Move lines up and down
+nnoremap <S-Up> :m-2<CR>
+nnoremap <S-Down> :m+<CR>
+inoremap <S-Up> <Esc>:m-2<CR>
+inoremap <S-Down> <Esc>:m+<CR>
+
+" Remove trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
+
+" Font configuration
+" These are the basic settings to get the font to work (required):
+set guifont=DroidSansMono\ Nerd\ Font:h11
+let g:airline_powerline_fonts=1
+
+" Airline tab line
+let g:airline#extensions#tabline#enabled = 1
