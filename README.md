@@ -22,7 +22,7 @@ The installation script should set zsh to your default shell, but if it doesn't 
 
 Then, run:
 
-    git clone git://github.com/lucascaton/dotfiles.git ~/.dotfiles
+    git clone git://github.com/raphaeltelatim/dotfiles.git ~/.dotfiles
     ~/.dotfiles/install.sh
 
 Finally, install the following plugins:
