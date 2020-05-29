@@ -7,7 +7,7 @@ plugins=(
 	tmux 
 	ruby
 	zsh-syntax-highlighting
-  zsh-autosuggestions
+	zsh-autosuggestions
 )
 
 HIST_STAMPS="mm/dd/yyyy"
