@@ -2,7 +2,7 @@ export ZSH="$HOME"/.oh-my-zsh
 export EDITOR='vim'
 export LANG=en_US.UTF-8
 
-ZSH_THEME="gnzh"
+HIST_STAMPS="mm/dd/yyyy"
 
 plugins=(
   git
@@ -10,14 +10,23 @@ plugins=(
   ruby
   zsh-syntax-highlighting
   zsh-autosuggestions
+  zsh-completions
 )
 
-HIST_STAMPS="mm/dd/yyyy"
+ZSH_THEME="spaceship"
+
+# Spaceship theme options
+
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_PROMPT_ADD_NEWLINE=true
+SPACESHIP_PROMPT_SEPARATE_LINE=false
+SPACESHIP_RUBY_SYMBOL='ruby '
+SPACESHIP_ELIXIR_SYMBOL='elixir '
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
-
 source $HOME/.zshenv
+
 eval "$(rbenv init -)"
 
 source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
