@@ -6,7 +6,6 @@ HIST_STAMPS="mm/dd/yyyy"
 
 plugins=(
   git
-  tmux
   ruby
   zsh-syntax-highlighting
   zsh-autosuggestions
@@ -25,7 +24,6 @@ SPACESHIP_ELIXIR_SYMBOL='elixir '
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
-source $HOME/.zshenv
 
 eval "$(rbenv init -)"
 
