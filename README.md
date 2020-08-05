@@ -35,9 +35,9 @@ Clone this repo:
 Grant permission to installation script and then run it:
 
 ```
-chmod +x ~/.dotfiles/install.sh
+chmod +x ~/.dotfiles/bootstrap.sh
 
-~/.dotfiles/install.sh
+~/.dotfiles/bootstrap.sh
 ```
 
 #### Spaceship Theme:
