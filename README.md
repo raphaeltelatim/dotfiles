@@ -4,25 +4,23 @@ Repository with all my dotfiles.
 
 # Install
 
-Firstly, install [oh my zsh](https://github.com/robbyrussell/oh-my-zsh) and zsh:
-
-##### OSX:
+Firstly, install zsh:
 
 ```
+  # OSX
   brew install zsh
-```
-
-##### Ubuntu
-
-```
+  
+  # Ubuntu
   apt install zsh -y
 ```
+
+And then [oh my zsh](https://github.com/robbyrussell/oh-my-zsh):
 
 ```
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-The installation script should set zsh to your default shell, but if it doesn't you can do it manually:
+The installation script should set zsh to default shell, but if it doesn't it can be do it manually:
 
 ```
   chsh -s $(which zsh)
