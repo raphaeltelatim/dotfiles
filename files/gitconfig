@@ -1,0 +1,30 @@
+[color]
+  ui = true
+
+[color "branch"]
+  local = green dim
+  current = yellow bold
+
+[color "status"]
+  added = green bold
+  changed = cyan dim
+  untracked = magenta
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[user]
+  name = Raphael Telatim
+  email = raphatelatim@gmail.com
+
+[pull]
+  rebase = true
+
+[push]
+  default = current
+
+[core]
+  editor = vim
