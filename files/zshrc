@@ -5,6 +5,7 @@ export LANG=en_US.UTF-8
 HIST_STAMPS="mm/dd/yyyy"
 
 plugins=(
+  bgnotify
   git
   ruby
   zsh-syntax-highlighting

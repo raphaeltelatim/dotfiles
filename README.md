@@ -40,6 +40,20 @@ chmod +x ~/.dotfiles/bootstrap.sh
 ~/.dotfiles/bootstrap.sh
 ```
 
+#### bgnotify
+
+On OS X you'll need [terminal-notifier](https://github.com/alloy/terminal-notifier)
+
+```
+brew install terminal-notifier 
+```
+
+or
+
+```
+gem install terminal-notifier
+```
+
 #### Spaceship Theme:
 
 Clone Spaceship repo:
