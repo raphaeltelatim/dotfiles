@@ -40,3 +40,6 @@ aftermerge(){
   clear
   git branch -a
 }
+
+# Elixir
+alias iex='iex --erl "-kernel shell_history enabled"
