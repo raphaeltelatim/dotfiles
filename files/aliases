@@ -42,4 +42,4 @@ aftermerge(){
 }
 
 # Elixir
-alias iex='iex --erl "-kernel shell_history enabled"
+alias iex='iex --erl "-kernel shell_history enabled"'
