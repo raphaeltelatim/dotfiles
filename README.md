@@ -14,12 +14,6 @@ Firstly, install zsh:
   apt install zsh -y
 ```
 
-And then [oh my zsh](https://github.com/robbyrussell/oh-my-zsh):
-
-```
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-
 The installation script should set zsh to default shell, but if it doesn't it can be do it manually:
 
 ```
@@ -78,11 +72,12 @@ Symlink `spaceship.zsh-theme` to your oh-my-zsh custom themes directory:
   git clone https://github.com/zsh-users/zsh-completions           ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 ```
 
-#### Fira Code font
+#### Fonts
 
 ##### OSX
 
 ```
+  brew install --cask font-jetbrains-mono-nerd-font
   brew tap homebrew/cask-fonts
   brew cask install font-fira-code
 ```
